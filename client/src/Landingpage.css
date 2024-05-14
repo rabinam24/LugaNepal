@@ -1,0 +1,51 @@
+.hero {
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(180deg, #ffffff, #e1ffea22 60%);
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to next line */
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px; /* Reduced gap for smaller screens */
+    padding: 0 20px; /* Reduced padding for smaller screens */
+    text-align: center; /* Center text on smaller screens */
+}
+
+.hero-left h1 {
+    color: black;
+    font-size: 28px; /* Adjusted font size for smaller screens */
+    font-weight: 600;
+}
+
+.hero-left span {
+    color: #ff0b0b;
+    font-size: 36px; /* Adjusted font size for smaller screens */
+    font-weight: 600;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .hero-left {
+        padding: 0 40px; /* Increased padding for larger screens */
+        text-align: left; /* Align text to left on larger screens */
+    }
+
+    .hero-left h1 {
+        font-size: 40px; /* Restore font size for larger screens */
+    }
+
+    .hero-left span {
+        font-size: 50px; /* Restore font size for larger screens */
+    }
+}
